@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// styles.scss
+
+$primary:rgb(56, 65, 82);
+$secondary:rgb(223, 105, 77);
+*{
+  font-family: "Poppins", serif !important;
+  padding: 0%;
+  scroll-behavior: smooth;
+  margin: 0%;
+  border: 0cap;
+}
+.sectionTitle{
+    font-size: 18px;
+    @include media-breakpoint-down(sm){
+    font-size: 13px;
+    }
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $secondary;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+  }
+  .sectionDescription{
+    @include media-breakpoint-down(sm){
+    font-size: 35px;
+    }
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+  }
+
+.off{
+  background-color: rgba($color: black, $alpha: 0.3);
+  font-family: "Poppins", serif;
+   color: white;
+   .offb{
+    @include media-breakpoint-down(lg){
+      text-transform: capitalize;
+    .sign_up{
+      background-color: $secondary;
+      border-radius: 10px;
+      text-align: center;
+      &:hover{
+        background-color: transparent;
+          border-radius: 10px;
+          text-align: center;
+          color: $secondary;
+          border: .8px solid $secondary;
+          margin-bottom: 10px;
+      }
+    }
+    .sign_in{
+      background-color: transparent;
+      border-radius: 10px;
+      text-align: center;
+      color: $secondary;
+      border: .8px solid $secondary;
+      margin-bottom: 10px;
+      &:hover{
+        background-color: $secondary;
+          border-radius: 10px;
+          color: white;
+          text-align: center;
+      }
+    }
+    }
+    
+   }
+    
+}
+.shrink{
+  padding: 20px 30px !important;
+  @include media-breakpoint-down(sm){
+    padding:10px 20px !important ;
+  }
+  background-color: rgb(76, 85, 100) !important;
+  transition: all .3s ease;
+}
+.navbar {
+  .active{
+      color: rgb(151, 158, 164) !important;
+      &:hover{
+        color: $secondary !important;
+      }
+  }
+  background-color: $primary;
+  padding: 32px 50px ;
+  @include media-breakpoint-down(xl){
+  padding: 32px 30px ;
+  }
+  font-family: "Poppins", serif;
+  .sign_up{
+    background-color: $secondary;
+    color: white !important;
+    border-radius:30px;
+    padding: 16px 32px !important;
+    font-size: 18px !important;
+    margin-top: -8px;
+    @include media-breakpoint-down(xl){
+      text-align: center;
+      padding: 16px !important;
+        font-size: 14px !important;
+    }
+    &:hover{
+      background-color: rgba($color: $secondary, $alpha: .15);
+      color: $secondary !important;
+    }
+  }
+    .sign_in {
+      border-radius: 30px;
+      padding: 16px 32px !important;
+      font-size: 18px !important;
+      margin-top: -8px;
+      margin-right: 10px;
+      background-color: rgba($color: $secondary, $alpha: .15);
+      color: $secondary !important;
+      @include media-breakpoint-down(xl) {
+          padding: 16px !important;
+          font-size: 14px !important;
+        }
+      &:hover {
+        color: white !important;
+        background-color: $secondary;
+      }
+    }
+  .nav-link {
+    &:hover{
+      color: $secondary ;
+    }
+    @include media-breakpoint-down(xl) {
+        font-size: 18px;
+      }
+    
+      @include media-breakpoint-down(lg) {
+        
+        font-size: 16px;
+        font-weight: 400;
+      }
+      text-transform: capitalize;
+      color: rgb(151, 158, 164);
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .num{
+      &:hover{
+        color: $secondary !important;
+      }
+      color: white !important;
+    }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  
+        @include media-breakpoint-down(sm) {
+          img{
+            width: 36px !important;
+            height: 36px !important;
+          }
+          font-size: 15px !important;
+        }
+  width: 56px;
+  height: 56px;
+  font-size: 24px !important;
+  font-weight: 600;
+  
+}
+}
+.call {
+  display: inline-flex;
+  align-items: center;
+  color: $secondary !important;
+  padding-right: 10px !important;
+  padding: 0px;
+}
+
+.hero{
+  background-color: $primary;
+  padding: 80px 96px;
+  @include media-breakpoint-only(lg){
+  padding: 100px 96px;
+  }
+    @include media-breakpoint-down(lg) {
+      padding: 140px 30px 50px 30px;
+    }
+    @include media-breakpoint-only(md) {
+      padding: 160px 30px 50px 30px;
+      text-align: center !important;
+    }
+  color: white;
+  h1{
+    @include media-breakpoint-down(sm){
+      font-size: 50px;
+    }
+    font-size: 68px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p{
+    @include media-breakpoint-down(sm) {
+        font-size: 15px;
+      }
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  button{
+    font-size: 20px;
+    font-weight: 500;
+    padding:20px 56px;
+    @include media-breakpoint-down(sm){
+    padding: 10px 36px;
+    }
+    border: .8px solid $secondary;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    a{
+      text-decoration: none;
+      text-transform: capitalize;
+      color: inherit;
+    }
+  }
+    .first {
+      background-color: $secondary;
+      color: white;
+      &:hover{
+        background-color: transparent;
+        color: $secondary;
+      }
+    }
+  
+    .second {
+      background-color: transparent;
+      color: $secondary;
+      &:hover {
+          background-color: $secondary;
+          color: white;
+        }
+    }
+    .img{
+      position: relative;
+      
+    }
+        .pizza {
+          display: flex;
+          background-color: white;
+          gap: 10px;
+          align-items: center;
+          position: absolute;
+             @include media-breakpoint-only(lg){
+              bottom: 53%;
+              left: 8%;
+              }
+              @include media-breakpoint-down(sm){
+               position: relative;
+               margin-top: 30px;
+              }
+          bottom: 2.5%;
+          left: 8%;
+          padding: 8px;
+          border-radius: .75rem;
+    
+          p {
+            color: rgba(0, 0, 0, .5);
+            background-color: white;
+            text-align: start;
+          }
+        }
+}
+
+.features{
+  background-color: rgb(18, 18, 18);
+  padding: 150px 0 80px 0;
+  text-align: center;
+  
+  .cardarea{
+    .card{
+      width: fit-content;
+      padding: 32px 25px;
+      background: linear-gradient(to bottom, rgb(36, 36, 36) 0%,rgba(0, 0, 0,1) 50%);
+      border: 0;
+      border-radius: 20px;
+      position: relative;
+      @include media-breakpoint-up(md){
+        margin-right: 20px;
+      }
+      margin-top: 128px;
+      .ci{
+        position: absolute;
+        top: -40%;
+      }
+      .ct{
+        margin-top: 24px;
+  
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .cte{
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 400;
+        color: RGBA(255, 255, 255, 0.5);
+      }
+      .cl{
+        margin-top: 8px;
+        color: $secondary;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        &:hover{
+          border-bottom: 1px solid $secondary;
+        }
+      }
+    }
+  }
+}
+.Recipe{
+  padding: 150px 0 80px 0;
+  background-color: rgb(18, 18, 18);
+  position: relative;
+  .description{
+    @include media-breakpoint-down(sm){
+      font-size: 14px;
+    }
+    font-size: 18px;
+    font-weight: 400;
+    color: RGBA(255, 255, 255, 0.5);
+    margin-bottom: 60px;
+  }
+  button{
+    background-color: $secondary;
+      color: white !important;
+      border-radius: 30px;
+      padding: 16px 32px !important;
+      font-size: 18px !important;
+      margin-top: -8px;
+    text-transform: capitalize;
+      @include media-breakpoint-down(xl) {
+        text-align: center;
+        padding: 16px !important;
+        font-size: 14px !important;
+      }
+    
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $secondary;
+        color: $secondary !important;
+      }
+  }
+  .burger{
+    width: 450px;
+    height: 450px;
+    @include media-breakpoint-only(lg){
+      width: 300px;
+        height: 300px;
+    }
+    position: absolute;
+    bottom: -15%;
+    right: 0%;
+  }
+}
+.chefs{
+  padding: 150px 0 80px 0;
+  background-color: rgb(48, 30, 26);
+  text-align: center;
+  .content{
+    position: relative;
+  }
+  .linkedin{
+    width:220px;
+    height: 220px;
+    position: absolute;
+    top: 40%;
+    right: -5%;
+  }
+}
+
+.Gallery{
+  background-color: rgb(18, 18, 18);
+  padding: 150px 0 80px 0;
+  text-align: center;
+  .Mansory{
+    .details{
+      position: relative;
+      margin-top:30px ;
+      overflow: hidden;
+      img{
+        @include media-breakpoint-down(sm){
+        border-radius: 20px;
+        }
+        border-radius:40px;
+      }
+      &:hover {
+        .background{
+          animation: up .5s ease-in-out;
+          transform: translateY(0%);
+        }
+      }
+      .background{
+        position: absolute;
+        top: 0;
+        background-color: rgba($color: black, $alpha: 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        @include media-breakpoint-down(sm){
+          padding: 20px;
+        }
+        @include media-breakpoint-only(md){
+          padding: 20px 50px;
+        }
+        padding:  50px;
+        text-align: start;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        @include media-breakpoint-down(sm) {
+            border-radius: 20px;
+          }
+          border-radius:40px;
+          .content{
+            color: white;
+            h3{
+              @include media-breakpoint-only(md){
+                font-size: 15px !important;
+              }
+              @include media-breakpoint-down(md) {
+                font-size: 13px !important;
+              }
+              font-size: 24px;
+              font-weight: 400;
+              span{
+                font-weight: 700;
+                margin-right: 5px;
+              }
+            }
+            .price{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 20px;
+              button{
+                text-transform: capitalize;
+                border-radius: 20px;
+                background-color: $secondary;
+                color: white;
+                border: 2px solid $secondary;
+                &:hover{
+                  background-color: rgba($color: $secondary, $alpha: 0.5);
+                }
+                @include media-breakpoint-only(md){
+                      padding: 4px 14px;
+                      font-size: 15px;
+                }
+                @include media-breakpoint-down(md) {
+                  padding: 4px 10px;
+                  font-size: 13px;
+                }
+                padding: 8px 24px;
+              }
+            }
+          }
+          
+      }
+    }
+  }
+}
+
+@keyframes up {
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.Emailcontainer{
+  background-color: rgb(18, 18, 18);
+  padding: 150px 0 80px 0;
+  .emailcont{
+    background-color: $secondary;
+    border-radius: 30px 400px 30px 30px;
+    @include media-breakpoint-down(sm){
+    border-radius: 20px 300px 20px 20px;
+    overflow-x: hidden;
+    }
+    color: white;
+    h5{
+      font-size: 18px;
+      @include media-breakpoint-down(sm){
+      font-size: 10px;
+      }
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+    h1{
+      @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .mainbox{
+      background-color: black;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 30px;
+      @include media-breakpoint-up(md){
+      border-radius: 40px;
+      }
+      .arrow{
+        background-color: rgb(33, 32, 32);
+        padding: 10px;
+        border-radius: 50%;
+      }
+      .input{
+        width: 75%;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        caret-color: white;
+        padding: 10px;
+        color: white;
+        font-size: 13px;
+        @include media-breakpoint-down(lg){
+        font-size: 8px;
+        }
+        &::placeholder{
+          color: gray;
+
+        }
+      }
+    }
+    .nimage{
+      position: relative;
+      .soup{
+        position: absolute;
+        top: -18%;
+        width: 550px;
+        height: 550px;
+      }
+      .yellow{
+        position: absolute;
+        top: 75%;
+      }
+      .blue{
+        position: absolute;
+        top: 65%;
+        right: 30%;
+      }
+      .onion{
+        position: absolute;
+        top: 80%;
+        padding: 0;
+        margin: 0%;
+      }
+    }
+  }
+}
+.logo{
+  width: 40px;
+  height: 40px;
+}
+.footer{
+  .title{
+    font-size: 20px;
+    font-weight: 600;
+    @include media-breakpoint-down(sm){
+      font-size: 15px;
+    }
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  .values{
+    font-size: 16px;
+    font-style: 400;
+    color: RGBA(255, 255, 255, 0.7) !important;
+    list-style: none;
+    @include media-breakpoint-down(sm) {
+        font-size: 13px;
+      }
+    &:hover{
+      color: $secondary !important;
+      cursor: pointer;
+    }
+  }
+  .brandname{
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-left: 15px;
+  }
+  .des{
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+    display: block;
+    width: 65%;
+  }
+  background-color: rgb(18, 18, 18);
+    padding-top: 150px;
+    .sm{
+      display: flex;
+      flex-direction: row;
+      .ic{
+        background-color: white;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 15px;
+        color: $primary;
+        border-radius: 50%;
+      }
+    }
+}
+
+.CopyRight{
+  background-color: rgb(18, 18, 18);
+  padding: 0 0 30px 0;
+  .hr{
+    border-top: 1px solid rgb(141, 135, 135);
+  }
+  .c{
+    font-size: 15px;
+  }
+  .c,span{
+    color: rgb(133, 133, 133);
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  span{
+    &:hover{
+      color: $secondary;
+      cursor: pointer;
+    }
+  }
+}
