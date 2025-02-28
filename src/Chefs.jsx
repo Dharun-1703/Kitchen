@@ -17,19 +17,19 @@ export default function Chefs() {
         cssEase: "linear",
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1025,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 450,
+                breakpoint: 426,
                 settings: {
                     slidesToShow: 1,
                 }
