@@ -252,6 +252,7 @@ $secondary:rgb(223, 105, 77);
           gap: 10px;
           align-items: center;
           position: absolute;
+          width: max-content;
              @include media-breakpoint-only(lg){
               bottom: 53%;
               left: 8%;
