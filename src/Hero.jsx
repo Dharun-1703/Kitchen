@@ -11,7 +11,7 @@ export default function Hero() {
                 <Row >
                     <Col lg={6} md={12}>
                         <Row className='my-lg-5 py-lg-5 ' >
-                            <h1>Cook anything with the experts</h1>
+                            <h1>Cook anything with the </h1>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                 accusantium doloremque laudantium, totam</p>
 
