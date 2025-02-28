@@ -29,7 +29,7 @@ export default function Chefs() {
                 }
             },
             {
-                breakpoint: 426,
+                breakpoint: 556,
                 settings: {
                     slidesToShow: 1,
                 }
