@@ -2,6 +2,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
+import Image from 'react-bootstrap/esm/Image';
+
 
 export default function CopyRight() {
     return (
@@ -14,10 +18,10 @@ export default function CopyRight() {
                     <Col xs={5}>
                         <Row>
                             <Col sm={6} className='text-md-end'>
-                                <span >Privacy policy</span>
+                                <span ><FontAwesomeIcon icon={faLock} />   Privacy policy</span>
                             </Col>
                             <Col sm={6}>
-                                <span>Terms & conditions</span>
+                                <span> <Image src='images/icons8.gif' id='tc' fluid /> Terms & conditions</span>
                             </Col>
                         </Row>
                     </Col>

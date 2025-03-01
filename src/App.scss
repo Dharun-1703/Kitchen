@@ -139,7 +139,7 @@ $secondary:rgb(223, 105, 77);
         font-weight: 400;
       }
       text-transform: capitalize;
-      color: rgb(151, 158, 164);
+      color: white;
       font-size: 20px;
       font-weight: 500;
     }
@@ -272,6 +272,9 @@ $secondary:rgb(223, 105, 77);
             text-align: start;
           }
         }
+}
+.white{
+  border-color: white !important;
 }
 
 .features{
@@ -630,6 +633,11 @@ $secondary:rgb(223, 105, 77);
 .CopyRight{
   background-color: rgb(18, 18, 18);
   padding: 0 0 30px 0;
+  #tc{
+      width: 30px;
+      height: 30px;
+      padding: 0;
+    }
   .hr{
     border-top: 1px solid rgb(141, 135, 135);
   }

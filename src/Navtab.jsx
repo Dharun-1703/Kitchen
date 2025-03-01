@@ -24,7 +24,7 @@ export default function Navtab() {
 
   return (
     <>
-      <Navbar fixed='top' key='lg' expand='lg' className="navbar" ref={ref}>
+      <Navbar fixed='top' key='lg' expand='lg' className="navbar" ref={ref} variant='dark'>
         <Container fluid>
           <Navbar.Brand href="#" className='navbar-brand'>
             <Stack direction="horizontal" gap={2}>
@@ -32,14 +32,14 @@ export default function Navtab() {
               Chef's Kitchen.
             </Stack>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} className=' border-0 ' />
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} className=' border-0 white' />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
             aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
             placement="end"
             className='off '
           >
-            <Offcanvas.Header closeButton>
+            <Offcanvas.Header closeButton closeVariant="white">
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                 <Stack direction="horizontal" gap={2}>
                   <img src='images/logo/Logo.svg' />
